@@ -131,3 +131,4 @@ dmypy.json
 data/
 data_transformed/
 models/
+data_extra/
