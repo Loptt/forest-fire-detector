@@ -1,12 +1,16 @@
 # Forest Fire Detector
 
-The main code is located at image_analysis.ipynb. The code is divided into 4 sections as follows:
-* The analysis of a single image
-* The analysis of multiple image for the training and test data sets.
-* The preprocessing of a single image
-* A function to perform the preprocessing in a single step.
+There are three Jupyter Notebooks, one for each classifier created
 
-The data set is too large to be uploaded to Github. Please download the data from [here](https://essexuniversity-my.sharepoint.com/:f:/g/personal/hr17576_essex_ac_uk/EplQh6rwA8pJhHP0jKfg6-kBVHyb1BE9TCAj4MVR0tyOEA).
-Once downloaded, it must be placed in a directory called data/ at the root of the project.
+- The classifier with the VGG19 model is in classifier_vgg19.ipynb
+- The classifier with the ResNet50 model is in classifier_resnet50.ipynb
+- The classifier with the InceptionV3 model is in classifier_inceptionv3.ipynb
 
-Please note that running the Jupyter Notebook with all the data set might take a while to execute (maybe a couple of hours or more...). So please use less data when possible for testing purposes.
+Run each individual notebook from start to finish to see the training and evaluation process for each model.
+
+The exploratory analysis for the images can be found in image_analysis.ipynb. Please note that running the analysis on all images might take a while to execute...
+
+The data set is too large to be uploaded to Github. Please download the data from [here](https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs).
+Once downloaded, it must be placed in a directory called data/ at the root of the project. This step is crucial for the training to work.
+
+Finally, models are saved in the models/ directory. Previously saved models are, however not on this repository as they are too large to by uploaded as dictated by GitHub guidelines.
